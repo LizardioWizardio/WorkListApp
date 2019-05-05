@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">WorkList</string>
+    <string name="action_settings">Settings</string>
+    <string name="not_complete_text">Не выполнено</string>
+    <string name="complete_text">Выполнено</string>
+    <string name="date_format">%tc</string>
+    <string name="title_activity_create_task">Create Task</string>
+    <string name="title_text">Название</string>
+    <string name="date_text">Дата</string>
+    <string name="description_text">Описание</string>
+    <string name="add_task_text">Добавить задачу</string>
+    <string-array name="importance_arr">
+        <item>Не важно</item>
+        <item>Важно</item>
+        <item>Критично</item>
+    </string-array>
+</resources>
