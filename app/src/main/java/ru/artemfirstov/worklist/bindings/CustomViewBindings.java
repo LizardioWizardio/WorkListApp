@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
-
+//позволяет использовать кастомные атрибуты для xml
 public class CustomViewBindings {
     @BindingAdapter("setAdapter")
     public static void bindRecyclerViewAdapter(RecyclerView recyclerView, RecyclerView.Adapter<?> adapter) {
@@ -17,7 +17,7 @@ public class CustomViewBindings {
         recyclerView.setAdapter(adapter);
     }
 
-    @BindingAdapter(value = {"selectedValue", "selectedValueAttrChanged"}, requireAll = false)
+    @BindingAdapter(value = {"selectedValue", "selectedValueAttrChanged"}, requireAll = false) //для выбранного значения спиннера
     public static void bindSpinnerData(Spinner pAppCompatSpinner, String newSelectedValue, final InverseBindingListener newTextAttrChanged) {
         pAppCompatSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override

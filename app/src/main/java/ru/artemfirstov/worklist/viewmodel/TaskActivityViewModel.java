@@ -12,8 +12,8 @@ import java.text.SimpleDateFormat;
 import ru.artemfirstov.worklist.MainActivity;
 import ru.artemfirstov.worklist.MyApplication;
 import ru.artemfirstov.worklist.model.Task;
-
-public class TaskActivityViewModel extends BaseObservable {
+//VM для TaskActivity
+public class TaskActivityViewModel extends BaseObservable { //с помощью Observable обрабатываем введенные данные и сохраняем их
     public final ObservableField<String> title = new ObservableField<>();
     public final ObservableField<String> description = new ObservableField<>();
     public final ObservableField<String> importance = new ObservableField<>();
@@ -25,7 +25,7 @@ public class TaskActivityViewModel extends BaseObservable {
         this.context = context;
     }
 
-
+    // Обработка нажатия на кнопку "Добавить задачу"
     public void createTaskClick() {
         try {
             @SuppressLint("SimpleDateFormat")
